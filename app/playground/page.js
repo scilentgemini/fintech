@@ -1,5 +1,8 @@
 import Button from "@/components/button";
+import Input from "@/components/input";
+import Label from "@/components/label";
 import PageHeader from "@/components/page-header";
+import Select from "@/components/select";
 import TransactionItem from "@/components/transaction-item";
 import TransactionSummaryItem from "@/components/transaction-summary-item";
 import Trend from "@/components/trend";
@@ -88,41 +91,27 @@ export default function Playground() {
         <hr className="mb-4 border-gray-200 dark:border-gray-800" />
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label className="text-gray-700 dark:text-gray-300 block mb-1">
-              Input Label
-            </label>
-            <input
-              type="text"
-              placeholder="This is a Placeholder"
-              className="w-full rounded-md shadow-sm border-gray-300 bg-white dark:border-gray-700 dark:bg-gray-950"
-            />
+            <Label className="mb-1">Input Label</Label>
+            <Input type="text" placeholder="This is a Placeholder" />
           </div>
 
           <div>
-            <label className="text-gray-700 dark:text-gray-300 block mb-1">
-              City
-            </label>
-            <select
-              type="text"
-              className="w-full rounded-md shadow-sm border-gray-300 bg-white dark:border-gray-700 dark:bg-gray-950"
-            >
-                <option>Kathmandu</option>
-                <option>Lalitpur</option>
-                <option>Bhaktapur</option>
-                <option>Langtang</option>
-            </select>
+            <Label className="mb-1">City</Label>
+
+            <Select>
+              <option>Kathmandu</option>
+              <option>Lalitpur</option>
+              <option>Bhaktapur</option>
+              <option>Langtang</option>
+            </Select>
           </div>
 
           <div className="flex items-center">
-          <input
-              type="checkbox"
-              className="rounded border-gray-300 text-gray-700 bg-white dark:bg-gray-950 dark:text-gray-500 shadow-sm"
-            />
-            <label className="text-gray-700 dark:text-gray-300 ml-2">
+            <Input id="terms" type="checkbox" />
+            <Label className="ml-2" htmlFor="terms">
               Checkbox
-            </label>
+            </Label>
           </div>
-
         </div>
       </div>
     </main>

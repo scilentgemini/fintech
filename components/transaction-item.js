@@ -2,10 +2,8 @@ import { useFormatCurrency } from "@/hooks/use-format-currency";
 import {
   HandCoins,
   Landmark,
-  LucideLandmark,
   PiggyBank,
   Wallet,
-  Wallet2,
 } from "lucide-react";
 
 export default function TransactionItem({
