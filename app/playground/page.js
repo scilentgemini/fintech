@@ -3,6 +3,8 @@ import Input from "@/components/input";
 import Label from "@/components/label";
 import PageHeader from "@/components/page-header";
 import Select from "@/components/select";
+import Seperator from "@/components/seperator";
+import Skeleton from "@/components/skeleton";
 import TransactionItem from "@/components/transaction-item";
 import TransactionSummaryItem from "@/components/transaction-summary-item";
 import Trend from "@/components/trend";
@@ -88,7 +90,7 @@ export default function Playground() {
         <h2 mb-4 text-lg font-mono>
           Forms
         </h2>
-        <hr className="mb-4 border-gray-200 dark:border-gray-800" />
+        <Seperator />
         <div className="grid grid-cols-2 gap-4">
           <div>
             <Label className="mb-1">Input Label</Label>
@@ -112,6 +114,26 @@ export default function Playground() {
               Checkbox
             </Label>
           </div>
+        </div>
+      </div>
+
+      {/* Loading Skeleton */}
+      <div>
+        <h2 mb-4 text-lg font-mono>
+        Loading Skeleton
+        </h2>
+        <Seperator />
+        <div className="space-y-8">
+            <div className="flex space-x-4">
+                <Skeleton />
+                <Skeleton />
+                <Skeleton />
+            </div>
+            <div className="space-y-4">
+                <Skeleton />
+                <Skeleton />
+                <Skeleton />
+            </div>
         </div>
       </div>
     </main>
