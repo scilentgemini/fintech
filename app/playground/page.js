@@ -48,18 +48,18 @@ export default function Playground() {
           <hr className="mb-4 border-gray-200 dark:border-gray-800" />
           <TransactionItem type="Income" description="Salary" amount={2000} />
           <TransactionItem
-            type="Expenses"
+            type="Expense"
             category="Food"
             description="Going out to eat"
             amount={170}
           />
           <TransactionItem
-            type="Savings"
+            type="Saving"
             description="For myself"
             amount={500}
           />
           <TransactionItem
-            type="Investments"
+            type="Investment"
             description="In Microsoft"
             amount={9000}
           />

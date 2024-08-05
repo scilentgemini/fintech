@@ -17,15 +17,15 @@ export default function TransactionItem({
       icon: HandCoins,
       colors: "text-green-500 dark:text-green-400",
     },
-    Expenses: {
+    Expense: {
       icon: Wallet,
       colors: "text-red-500 dark:text-red-400",
     },
-    Savings: {
+    Saving: {
       icon: PiggyBank,
       colors: "text-indigo-500 dark:text-indigo-400",
     },
-    Investments: {
+    Investment: {
       icon: Landmark,
       colors: "text-yellow-500 dark:text-yellow-400",
     },
